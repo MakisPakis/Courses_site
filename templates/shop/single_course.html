@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ course.title }}{% endblock %}
+
+{% block content %}
+
+
+<div class="card mt-5" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ course.title }}</h5>
+    <p class="card-category">{{ course.category }}</p>
+    <p class="card-text">Students quantity: {{ course.students_qty }}</p>
+    <a href="#" class="btn btn-primary">Price: {{ course.price }} buy</a>
+  </div>
+</div>
+{% endblock %}
+
+
+
